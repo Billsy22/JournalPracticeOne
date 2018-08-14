@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Entry {
+struct Entry: Equatable, Codable {
     
     // MARK: -  Properties
     let timestamp: String
