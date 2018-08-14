@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		167A68782122741300D5E41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A68772122741300D5E41A /* AppDelegate.swift */; };
-		167A687A2122741300D5E41A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A68792122741300D5E41A /* ViewController.swift */; };
 		167A687D2122741300D5E41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167A687B2122741300D5E41A /* Main.storyboard */; };
 		167A687F2122741400D5E41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167A687E2122741400D5E41A /* Assets.xcassets */; };
 		167A68822122741400D5E41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167A68802122741400D5E41A /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		167A68742122741300D5E41A /* JournalPracticeOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalPracticeOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167A68772122741300D5E41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		167A68792122741300D5E41A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		167A687C2122741300D5E41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		167A687E2122741400D5E41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167A68812122741400D5E41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,53 @@
 		167A68762122741300D5E41A /* JournalPracticeOne */ = {
 			isa = PBXGroup;
 			children = (
-				167A68772122741300D5E41A /* AppDelegate.swift */,
-				167A68792122741300D5E41A /* ViewController.swift */,
-				167A687B2122741300D5E41A /* Main.storyboard */,
-				167A687E2122741400D5E41A /* Assets.xcassets */,
-				167A68802122741400D5E41A /* LaunchScreen.storyboard */,
-				167A68832122741400D5E41A /* Info.plist */,
+				167A688B212274F900D5E41A /* Model */,
+				167A688C2122750900D5E41A /* Model Controller */,
+				167A688D2122751200D5E41A /* View Controllers */,
+				167A68892122742700D5E41A /* Storyboards */,
+				167A688A2122743900D5E41A /* Resources */,
 			);
 			path = JournalPracticeOne;
+			sourceTree = "<group>";
+		};
+		167A68892122742700D5E41A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				167A687B2122741300D5E41A /* Main.storyboard */,
+				167A68802122741400D5E41A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		167A688A2122743900D5E41A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				167A68772122741300D5E41A /* AppDelegate.swift */,
+				167A687E2122741400D5E41A /* Assets.xcassets */,
+				167A68832122741400D5E41A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		167A688B212274F900D5E41A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		167A688C2122750900D5E41A /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		167A688D2122751200D5E41A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +172,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				167A687A2122741300D5E41A /* ViewController.swift in Sources */,
 				167A68782122741300D5E41A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = JournalPracticeOne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalPracticeOne/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZ5N56B84J;
-				INFOPLIST_FILE = JournalPracticeOne/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalPracticeOne/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
