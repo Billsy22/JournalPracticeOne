@@ -14,6 +14,8 @@
 		167A6891212275FC00D5E41A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A6890212275FC00D5E41A /* Entry.swift */; };
 		167A68932122768200D5E41A /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A68922122768200D5E41A /* EntryController.swift */; };
 		167A689521227C0F00D5E41A /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167A689421227C0F00D5E41A /* GlobalFunctions.swift */; };
+		16CE366B2123C24D003F3FF4 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE366A2123C24D003F3FF4 /* EntryListTableViewController.swift */; };
+		16CE366D2123C519003F3FF4 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CE366C2123C519003F3FF4 /* EntryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		167A6890212275FC00D5E41A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		167A68922122768200D5E41A /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		167A689421227C0F00D5E41A /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		16CE366A2123C24D003F3FF4 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		16CE366C2123C519003F3FF4 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		167A688D2122751200D5E41A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				16CE366A2123C24D003F3FF4 /* EntryListTableViewController.swift */,
+				16CE366C2123C519003F3FF4 /* EntryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,8 +188,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				167A68932122768200D5E41A /* EntryController.swift in Sources */,
+				16CE366B2123C24D003F3FF4 /* EntryListTableViewController.swift in Sources */,
 				167A6891212275FC00D5E41A /* Entry.swift in Sources */,
 				167A689521227C0F00D5E41A /* GlobalFunctions.swift in Sources */,
+				16CE366D2123C519003F3FF4 /* EntryDetailViewController.swift in Sources */,
 				167A68782122741300D5E41A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

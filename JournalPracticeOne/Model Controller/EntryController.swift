@@ -11,7 +11,13 @@ import Foundation
 class EntryController {
     
     // MARK: -  Properties
+    static let shared = EntryController()
     var entries: [Entry] = []
+    
+    // MARK: -  Load from persistence
+    init (){
+        self.entries = loadFromPersistentStorage()
+    }
     
     // MARK: -  CRUD Functions
     // Create new entry
@@ -19,11 +25,13 @@ class EntryController {
         let timeStamp = GlobalFunctions.shared.formatTimeStamp()
         let newEntry = Entry(timestamp: timeStamp, title: title, body: body)
         self.entries.append(newEntry)
+        saveToPersistence()
     }
     
     func delete(entry: Entry) {
         if let indexOfEntry = entries.index(of: entry) {
             entries.remove(at: indexOfEntry)
+            saveToPersistence()
         } else {
             print("Entry not found: \(#file); \(#function)")
         }
@@ -34,7 +42,7 @@ class EntryController {
     func fileURL() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = paths[0]
-        let fileName = "alarms.json"
+        let fileName = "entries.json"
         let url = documentDirectory.appendingPathComponent(fileName)
         return url
     }
